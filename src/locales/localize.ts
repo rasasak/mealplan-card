@@ -5,7 +5,10 @@ import es from './es.json';
 import cs from './cs.json';
 
 type Translation = Record<string, unknown>;
-const translations = { en, sv, ru, es, cs } satisfies Record<string, Translation>;
+const translations = { en, sv, ru, es, cs } satisfies Record<
+  string,
+  Translation
+>;
 type Language = keyof typeof translations;
 
 const defaultLang: Language = 'en';
